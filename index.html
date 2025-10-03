@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samadhi Temple</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive_index.css" />
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header-container" style="padding-left: 20px;padding-right: 20px;">
+        <div class="logo" onclick="window.location.href='index.html'">
+            <img style="height: 50px;width: 50px;border-radius: 50px;" src="Assets/amman devi.jpg">
+            <p>Mutharamman Seva Sangh</p>
+        </div>
+        <div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#comunity">community</a></li>
+                    <li><a href="#comunity" id="member">Member Login</a></li>
+                    <li><a href="#comunity" id="admin">Admin Login</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    &#9776; <!-- Unicode for hamburger icon -->
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Dropdown Menu -->
+    <div class="dropdown-menu" id="dropdown">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#community">Member Login</a></li>
+            <li><a href="#community">Admin Login</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <img src="Assets/temple.jpg" alt="Temple" />
+        <div class="hero-content">
+            <h2>Welcome to</h2>
+            <p>Chitharal Arulmigu Mutharamman Temple</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Our Temple</h2>
+            <p>Chitharal Arulmigu Mutharamman Temple, also known as Mutharamman Kovil, is a sacred Hindu temple located
+                in Chitharal, Tamil Nadu. Perched atop a picturesque hill, this temple is dedicated to Goddess
+                Mutharamman, a powerful manifestation of Goddess Durga. The temple is renowned for its spiritual
+                significance and its proximity to the ancient Chitharal Jain Monuments, which feature exquisite rock-cut
+                sculptures and cave temples from the 9th century. Surrounded by lush greenery and offering breathtaking
+                panoramic views, this temple is not just a place of worship but also a destination for history and
+                nature enthusiasts.</p>
+        </div>
+    </section>
+
+    <!-- community Section -->
+    <section class="comunity" id="comunity">
+        <div class="container">
+            <div>
+                <h2>Our Community</h2>
+                <div class="community-items">
+                    <div class="community">
+                        <div class="image">
+                            <img src="Assets/program.jpg" alt="program"   />
+                        </div>
+                        <div>
+                            <h3>Events Conducted</h3>
+                            <p class="event_p">Our community conducts event and programs to improve and
+                                grow our community</p>
+                        </div>
+                        <a class="btn-1" href="events.html">Learn More</a>
+                    </div>
+                    <div class="community">
+                        <div class="image">
+                            <img src="Assets/register.jpg" alt="program"   />
+                        </div>
+                        <div>
+                            <h3>Register</h3>
+                            <p style="padding-bottom: 50px;">Join us and Serve the Community</p>
+                        </div>
+                        <a class="btn" href="#home" onclick="highlightLogin()">Learn More</a>
+                    </div>
+                    <div class="community">
+                        <div class="image">
+                            <img src="Assets/community.jpg" alt="program"   />
+                        </div>
+                        <div>
+                            <h3>All our members</h3>
+                            <p style="padding-bottom: 50px;">Visit our community members</p>
+                        </div>
+                        <a class="btn" href="members.html">Learn More</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <p>&copy; 2025 Samadhi Temple | All Rights Reserved</p>
+            <p>Email: contact@samadhitemple.org | Phone: +91 98765 43210</p>
+        </div>
+    </footer>
+</body>
+
+</html>
